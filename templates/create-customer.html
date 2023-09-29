@@ -10,16 +10,16 @@
     <!-- Your content goes here -->
     <div class="register-form">
     <h1>ADD NEW CUSTOMER</h1>
-    <form id="create-client">
+    <form id="create-client" action="/register-customers" method="post">
       <label for="customer_name">New Customer: </label><br>
       <input type="text" id="customer_name" name="customer_name" maxlength="80" required><br>
-      <label for="customer_name">New Customer Email: </label><br>
+      <label for="customer_email">New Customer Email: </label><br>
       <input type="email" id="customer_email" name="customer_email" maxlength="255" required><br>
-      <label for="customer_mobile_numer">New Customer Contact Number: </label><br>
+      <label for="customer_mobile_number">New Customer Contact Number: </label><br>
       <input type="number" id="customer_mobile_number" name="customer_mobile_number" maxlength="10" required><br>
       <button type="submit" value="Submit" id="submit-form">Register !!!</button>
     </form>
   </div>
-<script src="./scripts/create-customer.js"></script>
+<script src="./scripts/admin-link.js"></script>
 </body>
 </html>

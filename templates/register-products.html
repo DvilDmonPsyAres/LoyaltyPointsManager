@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="./styles/register-products.css">
+</head>
+<body>
+    <!-- Your content goes here -->
+    <div class="register-form">
+    <h1>ADD NEW PRODUCT</h1>
+    <form id="create-product" action="/register-products" method="post">
+      <label for="product_name">Product Name: </label><br>
+      <input type="text" id="product_name" name="product_name" maxlength="150" required><br>
+      <label for="description">Product description: </label><br>
+      <input type="text" id="description" name="description" maxlength="255" required><br>
+      <label for="price">Product Price: </label><br>
+      <input type="number" id="price" name="price" maxlength="6" required step="0.01"><br>
+      <label for="loyalty_points">Loyalty Points: </label><br>
+      <input type="number" id="loyalty_points" name="loyalty_points" maxlength="2" required><br>
+      <label for="price_in_points">Price in Loyalty Points: </label><br>
+      <input type="number" id="price_in_points" name="price_in_points" maxlength="3" required><br>
+
+
+      <button type="submit" value="Submit" id="submit-form">Add Product</button>
+    </form>
+  </div>
+  <!-- <script src="./scripts/product-submit-parameters.js"></script> -->
+<script src="./scripts/admin-link.js"></script>
+</body>
+</html>

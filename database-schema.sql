@@ -5,10 +5,10 @@ DROP TABLE orders;
 
 CREATE TABLE customers (
   customer_id INTEGER PRIMARY KEY AUTOINCREMENT,
-  name VARCHAR(80) NOT NULL,
-  email VARCHAR(255) UNIQUE NOT NULL,
-  contact_number INTEGER NOT NULL,
-  loyalty_points INTEGER,
+  name VARCHAR(80),
+  email VARCHAR(255) UNIQUE,
+  contact_number INTEGER,
+  loyalty_points INTEGER DEFAULT 10,
   loyalty_time TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
